@@ -1,0 +1,36 @@
+name: Feature request
+description: "A new page, view, filter, export, or anything else the site should do."
+title: "[FEATURE] "
+labels: ["t:feature-request", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Asking us to mirror a mailing list we do not yet cover? Use the [new list form](https://github.com/r-mailing-lists/feedback/issues/new?template=4-list.yml) instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the problem rather than the solution. It often has more than one.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like the site to do?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you work around it today?
+      description: Including "I do not" is a useful answer.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: Links, sketches, or an example from another archive that does this well.
+    validations:
+      required: false

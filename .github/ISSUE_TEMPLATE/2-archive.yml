@@ -1,0 +1,109 @@
+name: Archive issue
+description: "A message is missing, garbled, misthreaded, misdated, or attributed to the wrong person."
+title: "[ARCHIVE] "
+labels: ["t:archive-issue", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Is the **page** broken rather than the content wrong? Use the [bug form](https://github.com/r-mailing-lists/feedback/issues/new?template=1-bug.yml) instead.
+
+        Asking us to **remove** a message or an email address? Do not file it here, because this tracker is public. Email support@caffeinatedmath.com and see the [archive policy](https://github.com/r-mailing-lists/.github/blob/main/ARCHIVE_POLICY.md).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - A message is missing
+        - The message body is garbled, truncated, or badly encoded
+        - Threading is wrong, replies are split or merged
+        - The date is wrong
+        - The author name or address is wrong
+        - There are duplicate messages
+        - A whole month, quarter, or year is missing
+        - The list has stopped updating
+        - A problem with the Parquet or the raw mbox
+        - Not sure
+    validations:
+      required: true
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list?
+      options:
+        - r-help
+        - r-devel
+        - r-package-devel
+        - r-announce
+        - r-packages
+        - r-sig-mac
+        - r-sig-finance
+        - r-sig-geo
+        - r-sig-mixed-models
+        - r-sig-epi
+        - r-sig-ecology
+        - r-sig-hpc
+        - r-sig-db
+        - r-sig-phylo
+        - r-sig-meta-analysis
+        - r-sig-networks
+        - r-sig-robust
+        - r-sig-teaching
+        - r-sig-insurance
+        - r-sig-jobs
+        - r-sig-gui
+        - r-sig-gr
+        - r-sig-debian
+        - r-sig-fedora
+        - r-sig-dynamic-models
+        - r-sig-windows
+        - r-sig-genetics
+        - r-sig-dcm
+        - r-help-es
+        - bioc-devel
+        - r-ug-ottawa
+        - rcpp-devel
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Where did you see it?
+      description: The message or page URL on the site.
+      placeholder: "https://r-mailing-lists.thecoatlessprofessor.com/lists/r-help/2024/03/thread"
+    validations:
+      required: true
+  - type: input
+    id: period
+    attributes:
+      label: Archive period
+      description: Helpful when a message is missing, or a whole period is. Upstream publishes some lists monthly, some quarterly, and a few annually, so use whichever shape matches the list.
+      placeholder: "2024-03, or 2024q1, or 2024"
+    validations:
+      required: false
+  - type: textarea
+    id: shows
+    attributes:
+      label: What does the archive show?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: upstream
+    attributes:
+      label: What does the upstream pipermail archive show?
+      description: |
+        This is the most useful thing you can tell us. Most lists are mirrored from stat.ethz.ch, one directory per list, so the same message upstream lives at a URL like https://stat.ethz.ch/pipermail/r-help/2024-March/. Rcpp-devel is the one exception and comes from https://lists.r-forge.r-project.org/pipermail/rcpp-devel/. Upstream directory names follow each list's own cadence, so they look like 2024-March, or 2024q1, or 2024. If upstream is wrong too, the problem is in the source and we cannot fix it here. If upstream is right and we are wrong, it is our bug. File this even if you did not check.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+    validations:
+      required: false

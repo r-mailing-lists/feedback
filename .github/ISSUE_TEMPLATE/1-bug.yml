@@ -1,0 +1,50 @@
+name: Bug report
+description: "The site itself is broken: a page will not load, search fails, a link is dead, the layout is wrong."
+title: "[BUG] "
+labels: ["t:bug", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Is a message **missing, garbled, or filed under the wrong thread** rather than the page being broken? Use the [archive issue form](https://github.com/r-mailing-lists/feedback/issues/new?template=2-archive.yml) instead.
+
+        Do not report security vulnerabilities here. This tracker is public. Email support@caffeinatedmath.com instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Where you saw it.
+      placeholder: "https://r-mailing-lists.thecoatlessprofessor.com/lists/r-help/"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Leave this blank if opening the page is enough to see it.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      description: The names are enough. Add versions only if you already know them.
+      placeholder: "e.g. Firefox on Windows"
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshots, console errors, anything else
+    validations:
+      required: false

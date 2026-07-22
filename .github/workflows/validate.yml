@@ -1,0 +1,32 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read   # only reads checked-out files; org default is write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Forms parse, and every label they apply exists in labels.yml
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          known=$(yq -o=json '.' .github/labels.yml | jq -r '.[].name' | sort -u)
+          fail=0
+          for f in .github/ISSUE_TEMPLATE/[0-9]*.yml; do
+            echo "checking ${f}"
+            yq -e '.name and .description and .body' "$f" > /dev/null
+            for label in $(yq -o=json '.' "$f" | jq -r '.labels[]?'); do
+              if ! grep -qxF "$label" <<<"$known"; then
+                echo "::error file=${f}::label '${label}' is not defined in .github/labels.yml"
+                fail=1
+              fi
+            done
+          done
+          exit $fail

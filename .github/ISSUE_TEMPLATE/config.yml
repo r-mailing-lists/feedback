@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Removal or privacy request
+    url: mailto:support@caffeinatedmath.com
+    about: To remove a message or personal information, email us. Please do not open a public issue.
+  - name: R Mailing Lists
+    url: https://r-mailing-lists.thecoatlessprofessor.com/
+    about: The site itself.
+  - name: The archives
+    url: https://github.com/r-mailing-lists
+    about: One repository per list, plus the Parquet releases.
+  - name: Email support
+    url: mailto:support@caffeinatedmath.com
+    about: For private support requests and security reports.

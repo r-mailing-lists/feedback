@@ -1,0 +1,24 @@
+name: Question
+description: "Ask how to find something, how to use the data, or anything else."
+title: "[QUESTION] "
+labels: ["t:question", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Two places worth checking first: the site at [r-mailing-lists.thecoatlessprofessor.com](https://r-mailing-lists.thecoatlessprofessor.com/), and [r-mailing-lists/data](https://github.com/r-mailing-lists/data), which publishes every list as Parquet if your question is about the messages themselves.
+
+        Two things do not belong in this public tracker. Do not report a security vulnerability here; email support@caffeinatedmath.com instead. Do not ask here for a message or an email address to be removed either; that also goes to support@caffeinatedmath.com, and the [archive policy](https://github.com/r-mailing-lists/.github/blob/main/ARCHIVE_POLICY.md) explains what to include.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+    validations:
+      required: false

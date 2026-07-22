@@ -1,0 +1,50 @@
+name: New list
+description: "Propose a mailing list that should be mirrored here but is not."
+title: "[LIST] "
+labels: ["t:list-request", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This organization mirrors 32 lists today. The full set is on the [org profile](https://github.com/r-mailing-lists). Tell us about one we are missing.
+
+        We can only mirror lists that publish a public pipermail archive. A list whose archive is subscriber-only is not something we can add.
+  - type: input
+    id: name
+    attributes:
+      label: List name
+      placeholder: "e.g. R-SIG-RUGs"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Public archive URL
+      description: The pipermail archive index for the list.
+      placeholder: "https://stat.ethz.ch/pipermail/r-sig-rugs/"
+    validations:
+      required: true
+  - type: dropdown
+    id: host
+    attributes:
+      label: Where is it hosted?
+      options:
+        - stat.ethz.ch
+        - R-Forge
+        - Somewhere else
+    validations:
+      required: true
+  - type: input
+    id: since
+    attributes:
+      label: How far back does the archive go?
+      placeholder: "e.g. 2007"
+    validations:
+      required: false
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is it worth mirroring?
+      description: Who uses it, and what would be lost if the archive went away?
+    validations:
+      required: true

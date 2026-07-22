@@ -1,0 +1,25 @@
+name: Documentation issue
+description: "Something in a README, on the site, or in this org's docs is wrong, missing, or confusing."
+title: "[DOCS] "
+labels: ["t:documentation", "s:needs-triage"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: A URL, or the repository and file.
+      placeholder: "https://github.com/r-mailing-lists/data#quick-start"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong, missing, or confusing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should it say instead?
+    validations:
+      required: false
