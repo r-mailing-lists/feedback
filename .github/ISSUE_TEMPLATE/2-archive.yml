@@ -30,6 +30,7 @@ body:
     id: list
     attributes:
       label: Which list?
+      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below.
       options:
         - r-help
         - r-devel
@@ -63,6 +64,7 @@ body:
         - bioc-devel
         - r-ug-ottawa
         - rcpp-devel
+        - rforge-archive
     validations:
       required: true
   - type: input
@@ -98,7 +100,7 @@ body:
     attributes:
       label: What does the upstream pipermail archive show?
       description: |
-        This is the most useful thing you can tell us. Most lists are mirrored from stat.ethz.ch, one directory per list, so the same message upstream lives at a URL like https://stat.ethz.ch/pipermail/r-help/2024-March/. Rcpp-devel is the one exception and comes from https://lists.r-forge.r-project.org/pipermail/rcpp-devel/. Upstream directory names follow each list's own cadence, so they look like 2024-March, or 2024q1, or 2024. If upstream is wrong too, the problem is in the source and we cannot fix it here. If upstream is right and we are wrong, it is our bug. File this even if you did not check.
+        This is the most useful thing you can tell us. Most lists are mirrored from stat.ethz.ch, one directory per list, so the same message upstream lives at a URL like https://stat.ethz.ch/pipermail/r-help/2024-March/. Rcpp-devel and the lists in rforge-archive are the exception and come from R-Forge, at URLs like https://lists.r-forge.r-project.org/pipermail/rcpp-devel/. Upstream directory names follow each list's own cadence, so they look like 2024-March, or 2024q1, or 2024. If upstream is wrong too, the problem is in the source and we cannot fix it here. If upstream is right and we are wrong, it is our bug. File this even if you did not check.
     validations:
       required: false
   - type: textarea

@@ -21,7 +21,7 @@ Neither do requests to remove a message or personal information, because filing 
 
 ## One thing worth checking first
 
-We mirror the public archives at stat.ethz.ch, one per list, such as [stat.ethz.ch/pipermail/r-help/](https://stat.ethz.ch/pipermail/r-help/). Rcpp-devel is the one exception and comes from [R-Forge](https://lists.r-forge.r-project.org/pipermail/rcpp-devel/). If a message is wrong there too, the problem is in the source and we cannot fix it downstream. Telling us what upstream shows is the single most useful thing a report can include, and the archive issue form has a field for it.
+We mirror the public archives at stat.ethz.ch, one per list, such as [stat.ethz.ch/pipermail/r-help/](https://stat.ethz.ch/pipermail/r-help/). Rcpp-devel and the other R-Forge lists are the exception and come from [R-Forge](https://lists.r-forge.r-project.org/pipermail/). If a message is wrong there too, the problem is in the source and we cannot fix it downstream. Telling us what upstream shows is the single most useful thing a report can include, and the archive issue form has a field for it.
 
 ## Links
 
