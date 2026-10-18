@@ -30,7 +30,7 @@ body:
     id: list
     attributes:
       label: Which list?
-      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below.
+      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below. For a Google Group, choose googlegroups-archive and name the group below.
       options:
         - r-help
         - r-devel
@@ -60,11 +60,16 @@ body:
         - r-sig-windows
         - r-sig-genetics
         - r-sig-dcm
+        - r-sig-rugs
+        - r-sig-wiki
+        - r-sig-qa
+        - r-sig-mediawiki
         - r-help-es
         - bioc-devel
         - r-ug-ottawa
         - rcpp-devel
         - rforge-archive
+        - googlegroups-archive
     validations:
       required: true
   - type: input
