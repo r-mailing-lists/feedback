@@ -13,7 +13,7 @@ jobs:
       contents: read   # actions/checkout, to read labels.yml
       issues: write    # the label endpoints are gated on the Issues scope
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Apply labels.yml
         env:
