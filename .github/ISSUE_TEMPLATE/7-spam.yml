@@ -1,0 +1,35 @@
+name: Spam report
+description: "A message is spam and should be hidden, or a message hidden as spam is not spam."
+title: "[SPAM] "
+labels: ["t:spam-report", "s:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The site hides a message as spam only after a person has confirmed it, and a hidden message can still be read on its own page. Tell us about spam we missed, or a message we hid by mistake. The "Report spam" and "Not spam?" links on the site fill this form in for you.
+
+        Asking us to **remove** a message or an email address? Do not file it here, because this tracker is public. Email support@caffeinatedmath.com and see the [archive policy](https://github.com/r-mailing-lists/.github/blob/main/ARCHIVE_POLICY.md).
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: What should happen?
+      options:
+        - This is spam
+        - This is not spam
+    validations:
+      required: true
+  - type: input
+    id: message
+    attributes:
+      label: The message on the site
+      description: The address of the message's own page.
+      placeholder: "https://r-mailing-lists.thecoatlessprofessor.com/lists/r-help/msg/msg-0123456789ab/"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Why you think so, if it is not plain from the message.
+    validations:
+      required: false
