@@ -23,6 +23,9 @@
 - name: "t:question"
   color: "cc317c"
   description: "Question from the community"
+- name: "t:spam-report"
+  color: "fbca04"
+  description: "A message to hide as spam, or one hidden by mistake"
 
 # Area: the domain, not the repo. Several domains are served by more than one
 # repo. Set by hand at triage, one per issue.
