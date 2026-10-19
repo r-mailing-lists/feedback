@@ -11,7 +11,7 @@ jobs:
     permissions:
       contents: read   # only reads checked-out files; org default is write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Forms parse, and every label they apply exists in labels.yml
         run: |
