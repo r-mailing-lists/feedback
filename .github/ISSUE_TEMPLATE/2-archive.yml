@@ -72,6 +72,7 @@ body:
         - biocbug
         - r-ug-ottawa
         - rmetrics-core
+        - r-br
         - rcpp-devel
         - rforge-archive
         - googlegroups-archive
