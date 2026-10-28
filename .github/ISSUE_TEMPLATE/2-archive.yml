@@ -30,7 +30,7 @@ body:
     id: list
     attributes:
       label: Which list?
-      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below. For a Google Group, choose googlegroups-archive and name the group below.
+      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below. For a Google Group, choose googlegroups-archive and name the group below. For a list read from Gmane, choose gmane-archive and name the list below.
       options:
         - r-help
         - r-devel
@@ -73,9 +73,15 @@ body:
         - r-ug-ottawa
         - rmetrics-core
         - r-br
+        - rkward
+        - rkward-devel
+        - rkward-users
+        - epls-r-users
+        - acs-r
         - rcpp-devel
         - rforge-archive
         - googlegroups-archive
+        - gmane-archive
     validations:
       required: true
   - type: input
