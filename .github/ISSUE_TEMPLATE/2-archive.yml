@@ -79,6 +79,7 @@ body:
         - epls-r-users
         - acs-r
         - debian-r
+        - r-pkg-team
         - rcpp-devel
         - rforge-archive
         - googlegroups-archive
