@@ -78,6 +78,7 @@ body:
         - rkward-users
         - epls-r-users
         - acs-r
+        - debian-r
         - rcpp-devel
         - rforge-archive
         - googlegroups-archive
