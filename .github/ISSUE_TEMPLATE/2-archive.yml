@@ -80,6 +80,9 @@ body:
         - acs-r
         - debian-r
         - r-pkg-team
+        - fedora-r-devel
+        - grass-stats
+        - statnet-help
         - rcpp-devel
         - rforge-archive
         - googlegroups-archive
