@@ -30,7 +30,7 @@ body:
     id: list
     attributes:
       label: Which list?
-      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below. For a Google Group, choose googlegroups-archive and name the group below. For a list read from Gmane, choose gmane-archive and name the list below.
+      description: For an R-Forge list other than rcpp-devel, choose rforge-archive and name the list below. For a Google Group, choose googlegroups-archive and name the group below. For a list read from Gmane, choose gmane-archive and name the list below. For Amelia or ReLogit, choose wayback-archive and name the list below.
       options:
         - r-help
         - r-devel
@@ -87,6 +87,7 @@ body:
         - rforge-archive
         - googlegroups-archive
         - gmane-archive
+        - wayback-archive
     validations:
       required: true
   - type: input
