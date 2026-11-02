@@ -94,7 +94,7 @@ body:
     attributes:
       label: Where did you see it?
       description: The message or page URL on the site.
-      placeholder: "https://r-mailing-lists.thecoatlessprofessor.com/lists/r-help/2024/03/thread"
+      placeholder: "https://archives.rstats.dev/lists/r-help/2024/03/thread"
     validations:
       required: true
   - type: input

@@ -20,7 +20,7 @@ body:
     attributes:
       label: Page URL
       description: Where you saw it.
-      placeholder: "https://r-mailing-lists.thecoatlessprofessor.com/lists/r-help/"
+      placeholder: "https://archives.rstats.dev/lists/r-help/"
     validations:
       required: true
   - type: textarea
