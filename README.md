@@ -1,6 +1,6 @@
 # R mailing list archives feedback
 
-Public feedback and issue tracker for the [R mailing list archives](https://github.com/r-mailing-lists) and the site that reads them, [r-mailing-lists.thecoatlessprofessor.com](https://r-mailing-lists.thecoatlessprofessor.com/).
+Public feedback and issue tracker for the [R mailing list archives](https://github.com/r-mailing-lists) and the site that reads them, [archives.rstats.dev](https://archives.rstats.dev/).
 
 The site's source is not public, and the archive repositories are written by scheduled jobs rather than by hand, so this is where everything is tracked: the archives, the data, and the site.
 
@@ -25,7 +25,7 @@ We mirror the public archives at stat.ethz.ch, one per list, such as [stat.ethz.
 
 ## Links
 
-- [R Mailing Lists](https://r-mailing-lists.thecoatlessprofessor.com/), the site
+- [R Mailing Lists](https://archives.rstats.dev/), the site
 - [The archives](https://github.com/r-mailing-lists), one repository per list
 - [data](https://github.com/r-mailing-lists/data), every list as Parquet
 - [rmail-parser](https://github.com/r-mailing-lists/rmail-parser), the parser behind them
