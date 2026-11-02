@@ -79,7 +79,6 @@ body:
         - epls-r-users
         - acs-r
         - debian-r
-        - r-pkg-team
         - fedora-r-devel
         - grass-stats
         - statnet-help
