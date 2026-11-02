@@ -23,7 +23,7 @@ body:
     attributes:
       label: The message on the site
       description: The address of the message's own page.
-      placeholder: "https://r-mailing-lists.thecoatlessprofessor.com/lists/r-help/msg/msg-0123456789ab/"
+      placeholder: "https://archives.rstats.dev/lists/r-help/msg/msg-0123456789ab/"
     validations:
       required: true
   - type: textarea
